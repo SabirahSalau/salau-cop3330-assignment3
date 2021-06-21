@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Class ReadNames
+{
+ArrayList<String> nameList
+-inputFile
++outputFile path
+
+read names
+sort list
+print output
+}
+
+Class SortNames
+{
+    +sortNames
+}
+
+Class OutputNames
+{
+    +printSortedNames
+    Output to console
+}
+
+ReadNames --> SortNames
+ReadNames -->OutputNames
+@enduml
