@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Class Solution46{
++passes input file path
+-genStars(for output)
+-determines frequency order
+}
+
+Class FindFrequency{
++search
+-returns count
+}
+
+Solution46 --> FindFrequency
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Class ReadEmployees{
+ArrayList<String> employees
+-infile path
+-outfile path
+read names
+}
+
+Class Parser{
++parseFile
+-console output
+-outile output
+}
+
+ReadEmployees --> Parser
+
+@enduml

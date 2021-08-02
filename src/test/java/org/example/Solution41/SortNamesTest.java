@@ -2,6 +2,7 @@ package org.example.Solution41;
 
 import org.junit.jupiter.api.Test;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -15,12 +16,13 @@ class SortNamesTest {
     {
         SortNames sortNames = new SortNames();
         
-        List<String> nameList = Arrays.asList("Johnson, Jim\n", "Ling, Mai\n", "Zarnecki, Sabrina");
-        String expected = ("Ling, Mai\nohnson, Jim\nZarnecki, Sabrina");
-        assertEquals(sortNames.sortNameList(nameList));
+        List<String> nameList = Arrays.asList("ABC", "CBA", "BCA");
+        List<String> expected = Arrays.asList("ABC", "BCA", "CBA");
+        List<String> actual = (sortNames.sortNameList(nameList));
+
+        assertEquals(expected, actual);
     }
 
-    private void assertEquals(List<String> sortNameList) {
-    }
+
 
 }

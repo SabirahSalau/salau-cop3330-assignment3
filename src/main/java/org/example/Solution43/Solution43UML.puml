@@ -1,0 +1,16 @@
+@startuml
+Class Prompts{
+-getSiteName
+-getAuthorName
+-getJS
+-getCSS
++Files
+}
+
+Class Files{
+-createSiteNameFolder
+-createJS/CSS file
+}
+
+Prompts --> Files
+@enduml

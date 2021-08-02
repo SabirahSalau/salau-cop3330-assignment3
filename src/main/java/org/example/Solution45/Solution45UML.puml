@@ -1,0 +1,14 @@
+@startuml
+Class Solution45{
+reads file
+-prompt user
+-calls Replacer
+}
+
+Class Replacer{
++replace
+closes files
+}
+
+Solution45 --> Replacer
+@enduml

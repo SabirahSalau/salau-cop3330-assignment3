@@ -13,10 +13,15 @@ public class Prompts
 
     public static void main(String[] args)
     {
+        Files files = new Files();
         String siteName = readInput("Site name:");
         String author = readInput("Author:");
-        String jsFolder = readInput("Do you want a folder for JavaScript?");
+        String js = readInput("Do you want a folder for JavaScript?");
         String css = readInput("Do you want a folder for CSS?");
+
+        System.out.println("Site name: " + siteName);
+        System.out.println("Author: " + author);
+        Files.generate(siteName, author, js, css);
     }
 
     public static String readInput(String prompt)

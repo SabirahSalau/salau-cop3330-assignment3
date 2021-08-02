@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Class App{
+
+display result
++prompt user
+    calls reader function and returns string
+
++reader
+    read/parse JSON file
+    create returns string
+}
+
+@enduml
